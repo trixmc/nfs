@@ -7,7 +7,7 @@ RUN apt-get install -y software-properties-common python-software-properties
 RUN apt-get install -y vim nano mc screen curl unzip wget
 
 # SSH service
-RUN sudo apt-get install -y openssh-server openssh-client
+#RUN sudo apt-get install -y openssh-server openssh-client
 RUN sudo mkdir /var/run/sshd
 RUN echo 'root:root' | chpasswd
 #change 'pass' to your secret password
