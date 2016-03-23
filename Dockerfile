@@ -17,6 +17,7 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
+
 #configs bash start
 #COPY configs/autostart.sh /root/autostart.sh
 #RUN  chmod +x /root/autostart.sh
